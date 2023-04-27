@@ -22,18 +22,22 @@ a {
   text-decoration: none;
 }
 .container {
-  width: 500px;   /* This sets the width */
+  width: 80%;   /* This sets the width */
   margin: 0 auto; /* This automatically sets left/right margins */
 }
 img {
   border-radius: 100px;
-  width: 100px;
+  width: 150px;
 }
 .card {
   background: white;
-  padding: 30px;
+  padding: 20px;
   border: 1px solid lightgrey;
   text-align: center;
+  margin-bottom: 10px;
+  border-radius: 20px;
+  display: block;
+  width: 100%;
 }
 /* .img-circle {
   border-radius: 50%;
@@ -44,9 +48,36 @@ img {
   font-size: 25px;
   text-align: center;
 }
+
 .list-inline {
 padding: 0px;
 }
+
+.projects {
+  display: block;
+  margin: 0 auto;
+  text-align: center;
+}
+
+.projects li {
+  display: inline-block;
+  margin: 0 10px;
+
+}
+
+.projects li .box {
+  width: 300px;
+  height: 200px;
+  margin: 0px 0px 70px 20px;
+}
+
+.projects .box img {
+  max-width: 100%;
+  width: 100%;
+  max-height: 100%;
+  border-radius: 5px;
+}
+
 .myButton {
   background-color: rgb(107 107 232);
   color: white;
@@ -58,6 +89,70 @@ padding: 0px;
 .myButton:hover {
   background-color: rgb(35, 35, 43);
 }
+.form-labels {
+  display: flex;
+  flex-direction: column;
+  align-items: start;
+  text-align: left
+}
+.contact-form {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+button{
+  margin-top: 10px;
+  background-color: rgb(107 107 232);
+  color: white;
+  padding: 10px 20px;
+  border-radius: 5px;
+  border: none;
+  cursor: pointer;
+}
+.label-email{
+  margin-bottom: 10px;
+  height: 25px;
+  width: 420px;
+  border: 1px solid blue;
+  border-radius: 5px;
+}
+.label-message{
+  height: 70px;
+  width: 420px;
+  margin-bottom: 20px;
+  border: 1px solid blue;
+  border-radius: 5px
+}
+
+ul{
+  list-style-type: none;
+  display: inline-block;
+  padding: 20px;
+  margin: 0;
+}
+
+.projects li .square {
+  width: 300px;
+  height: 200px;
+  margin: 0px 0px 70px 20px;
+}
+
+.socials li {
+  display: inline-block;
+  margin: 0 10px;
+  font-size: 30px;
+}
+.skills ul {
+  width: 20%;
+  margin: 1;
+  display: inline-block;
+}
+
+.fa-brands{
+ color: rgb(107 107 232);
+}
+
+
 @media (max-width: 960px) {
   /* For a screen < 960px, this CSS will be read */
   .container {
@@ -78,3 +173,4 @@ padding: 0px;
     width: 300px;
   }
 }
+
